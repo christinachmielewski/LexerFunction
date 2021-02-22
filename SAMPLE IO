@@ -1,0 +1,58 @@
+INPUT 
+
+def factorial = fun (n) {
+  // first check base case
+  if(<(n, 0.9),
+     1,
+     factorial(-(n, 1)) /* recursive case */ )
+};
+
+print(+("5! is ", factorial(5)))
+
+
+RESULTING OUTPUT
+
+(list
+  (list 'DEF       #f)
+  (list 'NAME      'factorial)
+  (list 'NAME      '=)
+  (list 'FUN       #f)
+  (list 'OPAREN    #f)
+  (list 'NAME      'n)
+  (list 'CPAREN    #f)
+  (list 'OBRACE    #f)
+  (list 'IF        #f)
+  (list 'OPAREN    #f)
+  (list 'NAME      '<)
+  (list 'OPAREN    #f)
+  (list 'NAME      'n)
+  (list 'COMMA     #f)
+  (list 'FLOAT     0.9)
+  (list 'CPAREN    #f)
+  (list 'COMMA     #f)
+  (list 'INT       1)
+  (list 'COMMA     #f)
+  (list 'NAME      'factorial)
+  (list 'OPAREN    #f)
+  (list 'NAME      '-)
+  (list 'OPAREN    #f)
+  (list 'NAME      'n)
+  (list 'COMMA     #f)
+  (list 'INT       1)
+  (list 'CPAREN    #f)
+  (list 'CPAREN    #f)
+  (list 'CPAREN    #f)
+  (list 'CBRACE    #f)
+  (list 'SEMICOLON #f)
+  (list 'NAME      'print)
+  (list 'OPAREN    #f)
+  (list 'NAME      '+)
+  (list 'OPAREN    #f)
+  (list 'STRING    "5! is ")
+  (list 'COMMA     #f)
+  (list 'NAME      'factorial)
+  (list 'OPAREN    #f)
+  (list 'INT       5)
+  (list 'CPAREN    #f)
+  (list 'CPAREN    #f)
+  (list 'CPAREN    #f))
